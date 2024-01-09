@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title> Hide / Show Password - Tutorial</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://www.bootstrapcdn.com/fontawesome" />
+        <link rel="javascript" href="script.js">
+    </head>
+    <body>
+        <div class ="form-box">
+            <h1>Login Here</h1>
+            <div class="input-box">
+                <i class="fa fa-key"></i>
+                <input type="email"placeholder="Email">
+            </div>
+            <div class="input-box">
+                <i class="fa fa-envelope"></i>
+                <input type="password" placeholder="Password" id="myInput">
+                <span class="key" onclick="myfunction()">
+                    <i id="hide1" class="fa fa-eye-slash" aria-hidden="true"></i>
+                <i id="hide2" class="fa fa-eye-slash" aria-hidden="true"></i>
+                </span>
+            </div>
+            <form id="password-form"></form>
+            <button type="button" class="Login-btn">LOGIN</button>
+            <script>
+                function myfunction(){
+                    var x = document.getElementById("myInput");
+                    var y = document.getElementById("hide1");
+                    var z = document.getElementById("hide2");
+
+                    if(x.type === 'password') {
+                        x.type = "text";
+                        y.style.display = "block";
+                        z.style.display = "none";
+                    }
+                    else {
+                        x.type = "password";
+                        y.style.display = "none";
+                        z.style.display = "block";
+                    }
+                }
+            </script>
+    </body>
+        </div>
+        <script>
+            var password = prompt ("Do you want to generate a new password?");
+            if (password == null | password =="Yes" ) {
+                txt = "";
+            } var password = prompt ("Enter a new password");
+            if (password == null | password == "" ) {
+            } else {
+                txt = "Congratulations, you now have a new password: " 
+                + password + "!";
+            }
+            alert(txt)
+        </script>
+
+<footer>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+      </svg> trishawaku@bcs.co.uk
+</footer>
+<footer>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+        <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"/>
+        <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"/>
+      </svg> Use the prompt
+</footer>
+        <!-- <body>
+            <div class="form-box">
+                <h2> Random Password Generator</h2>
+                <input type="text" id="myInput" placeholder="Create Password" id="Password" readonly>
+        
+                <table>
+                    <th><div id="button" class="btn1"><button>Generate</button></div>
+                    </div></th>
+                    <th><div id="button" class="btn2"><button>Copy</button></div>
+                    <form id="password-form">
+                        
+                </table>
+            </div>
+            <script type="text/javascript">
+                var Password= document.getElementById("password");
+        
+                function genPassword(){
+                    var charset = "0123456789";
+                    var charset = "$@/&*^£";
+                    var charset = "abcdefghijklmnopqrstuvwxyz"
+                    var charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                }
+                var passwordLength = 12;
+                var password ="";
+        
+                for(var i = 0; i<= passwordLength; i++) {
+                    var randomNumber = Math.floor(Math.random() * chars.length);
+                    password += chars.substring(random.Number, randomNumber +1);
+                }
+                {
+                document.getElementById("password").value = password;
+                }
+                function copyPassword(){
+                    var copytext = document.getElementById("password");
+                    copyText.select();
+                    copyText.setSelection(0,128);
+                    document.execCommand("copy");
+                }
+            </script>
+          </body> -->
+          </html>
+</html>
